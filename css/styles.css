@@ -129,15 +129,7 @@ icon {
 .item_imges:hover {
 	box-shadow:0px 0px 30px 14px rgba(209,46,46,0.73);
 }
-.item_imges:active {
-	transform: scale(2.7);
-	position: fixed;
-	top: 40%;
-	left: 45%;
-	z-index: 1000;
-	background-color: white;
-	box-shadow: none;
-}
+
 .flex_item {
 	display: flex;
 	justify-content: space-between;
@@ -156,6 +148,14 @@ icon {
 	color: #d12626;
 	position: relative;
 	left: 27px;	
+}
+.comment {
+	margin-left: 20px;
+	margin-top: -15px;
+	padding: 0;
+	font-size: 19px;
+	color: #d12626;
+	text-shadow: 1px 1px 0px black;
 }
 .item_old_value {
 	position: absolute;
@@ -221,10 +221,335 @@ icon {
 	font-size: 25px;
 	margin-top: 5px;
 }
+.flex-box {
+	display: flex;
+	flex-wrap: wrap;
+}
+.itemSale {
+	display: flex;
+	position: relative;
+	margin: 15px;
+	width: calc(50% - 30px);
+}
+.item_value-s {
+	background-color: #d12626;
+	width: 170px;
+	border-radius: 50%;
+	position: relative;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.item_value-s_p {
+	font-size: 30px;
+	color: #d12626;
+	position: relative;
+	left: 27px;
+}
+.item_value-s:before{
+	content: "";
+    width: 93%;
+	height: 88%;
+    background-color: white;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+	border-radius: 50%;
+}
+.sale_description {
+	width: 180px;
+	padding-left: 20px;
+	padding-top: 90px;
+}
+.item_imges-s {
+	width: 350px;
+	height: 260px;
+	border: 1px solid black;
+	border-radius: 30px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+}
+.item_imges-s:hover {
+	box-shadow:0px 0px 30px 14px rgba(255,165,0,0.73);
+}
 
+.heder_logo {
+		right: 270px;
+}
 
-
-
-
-
+.header__nav--li{
+	color: black;
+	padding: 10px 20px;
+	width:350px;
+	text-decoration:none;
+	text-align:center;
+	margin:3px auto;
+	display: block;
+	background-image: linear-gradient(to left,transparent,transparent 50%,red 50%,white);
+	background-position: 100% 0;
+	background-size: 200% 100%;
+	transition: all .35s ease-in;
+	font: 400 18px tahoma;
+	border: 3px solid black;
+	border-radius: 30px;
+	font-size: 20px;
+	background-color: white;
+	display: none;
+}
+.header__nav--li a {
+	width:350px;
+	background-color: red;
+}
+.header__nav--li:hover {
+	background-position: 0 0;
+	color: black;
+	border: 3px solid red;
+}
+.header__nav--menu {
+	color:white;
+	padding: 10px 20px;
+	width:350px;
+	text-decoration:none;
+	text-align:center;
+	margin:20px auto;
+	display: block;
+	background-image: linear-gradient(to left,transparent,transparent 50%,red 50%,white);
+	background-position: 100% 0;
+	background-size: 200% 100%;
+	transition: all .25s ease-in;
+	border: 3px solid white;
+	border-radius: 30px;
+	font-size: 20px;
+}
+.header_menu {
+	width: 350px;
+	margin-left: calc(50% - 250px);
+	margin-top: -10px;
+}
+.header__nav--menu:hover {
+	background-position: 0 0;
+	color: black;
+	border: 3px solid red;
+}
+.blok{
+	width: 150%;
+    height: 150%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    left: 0;
+    top: 0;
+    z-index: 1000;
+}
+@media screen and (max-width: 1275px) {
+	.header1img {
+		display: none;
+	}
+	.heder_logo {
+		right: 150px;
+	}
+}
+@media screen and (max-width: 1150px) {
+	.foter_img2 {
+		display: none;
+	}
+}
+@media screen and (max-width: 1130px) {
+	.wrapper {
+		margin-left: auto;
+	}
+	.itemSale {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.sale_description {
+		padding-top: 10px;
+	}
+	.item_value-s {
+		position: relative;
+		height: 94px;
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 1050px) {
+	.item_name {
+		font-size: 20px;
+	}
+	.foter_img1 {
+		display: none;
+	}
+}
+@media screen and (max-width: 970px) {
+	.item_description {
+		font-size: 15px;
+		flex-basis: 500px;
+	}
+	.item_name {
+		width: 500px;
+		margin-left: calc(50% - 250px);
+	}
+	.footer_p {
+		margin-left: -10%;
+	}
+}
+@media screen and (max-width: 860px) {
+	.header3img {
+		width: 150px;
+	}
+	.heder_logo {
+		right: 90px;
+	}
+	.item_name {
+		width: 400px;
+		margin-left: calc(50% - 200px);
+	}
+	.item_description {
+		flex-basis: 350px;
+	}
+	.item_description_p {
+		padding-top: 90px;
+	}
+	.sale_description {
+		width: 35%;
+	}
+}
+@media screen and (max-width: 710px) {
+	.header__nav--menu {
+		width: 200px;
+	}
+	.flex_item {
+		flex-wrap: wrap;
+	}
+	.item_imges {
+		flex-basis: 300px;
+	}
+	.item_name {
+		text-align: right;
+		margin-right: 0;
+		margin-left: 0;
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.item_value {
+		position: absolute;
+		top: 115px;
+		right: 0px;
+	}
+	.item_old_value {
+		top: 45px;
+		right: 60px;
+	}
+	.item_value_p {
+		left: 38px;
+	}
+	.itemSale {
+		flex-wrap: nowrap;
+		justify-content: center;
+		width: 100%;
+	}
+	.sale_description {
+		width: 180px;
+		padding-left: 20px;
+		padding-top: 90px;
+		text-align: center;
+	}
+	.item_value-s {
+		position: absolute;
+		height: 94px;
+		margin-top: 0;
+	}
+}
+@media screen and (max-width: 610px){
+	.footer_p {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 570px){
+	.header3img {
+		display: none;
+	}
+	.header__nav--menu {
+		margin-left: -30px;
+	}
+	.item_value {
+		position: relative;
+		top: 0;
+	}
+	.item_old_value {
+		display: none;
+	}
+	.item_name {
+		text-align: center;
+		margin-left: -10%;
+	}
+	.flex_item {
+		justify-content: center;
+	}
+	.header__nav--li {
+		margin-left: 13%;
+	}
+	.item_value-s {
+		width: 140px;
+	}
+}
+@media screen and (max-width: 540px) {
+	.header__nav--menu {
+		margin-left: 0px;
+	}
+}
+@media screen and (max-width: 540px){
+	.header__nav--menu {
+		width: 100px;
+		margin-left: 20px;
+	}
+	.header__nav--li {
+		margin-left: 14%;
+	}
+}
+@media screen and (max-width: 510px) {
+	.itemSale {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.sale_description {
+		padding-top: 10px;
+	}
+	.item_value-s {
+		position: relative;
+		height: 94px;
+		margin-top: 10px;
+	}
+}
+@media screen and (max-width: 450px) {
+	.header__nav--menu {
+		margin-left: 50px;
+	}
+	.item_name {
+		margin-left: -15%;
+	}
+	.header__nav--li {
+		margin-left: 16%;
+	}
+	.footer_p {
+		font-size: 15px;
+	}
+}
+@media screen and (max-width: 390px){
+	.header__nav--menu {
+		margin-left: 70px;
+	}
+	.item_name {
+		margin-left: -20%;
+	}
+	.item_name {
+		margin-left: -35%;
+		width: auto;
+	}
+	.header__nav--li {
+		width: 330px;
+		margin-left: 19%;
+	}
+}
 
