@@ -34,11 +34,10 @@ icon {
 .header {
 	position: fixed;
     height: 70px;
-    background-color: #d12626;
+    background-color: #004f96;
     width: 110%;
 	left: 0;
     top: 0;
-	background-image: url(../img/sale2.jpg);
 	background-position: 0% 30%;
     background-size: 95%;
     background-repeat: no-repeat;
@@ -97,7 +96,7 @@ icon {
 }
 .item_name {
 	font-size: 25px;
-	color: #d12626;
+	color: #004f96;
 	text-align: center;
 	margin-bottom: -40px;
 	padding-top: 30px;
@@ -127,7 +126,7 @@ icon {
 }
 /*Будет возможность, переделать нормально на JS*/
 .item_imges:hover {
-	box-shadow:0px 0px 30px 14px rgba(209,46,46,0.73);
+	box-shadow:0px 0px 30px 14px rgba(0, 79, 150,0.73);
 }
 
 .flex_item {
@@ -137,7 +136,7 @@ icon {
 	position: relative;
 }
 .item_value{
-	background-color: #d12626;
+	background-color: #004f96;
 	width: 180px;
 	border-radius: 50%;
 	position: relative;
@@ -145,7 +144,7 @@ icon {
 }
 .item_value_p {
 	font-size: 30px;
-	color: #d12626;
+	color: #004f96;
 	position: relative;
 	left: 27px;	
 }
@@ -154,7 +153,7 @@ icon {
 	margin-top: -15px;
 	padding: 0;
 	font-size: 19px;
-	color: #d12626;
+	color: #004f96;
 	text-shadow: 1px 1px 0px black;
 }
 .item_old_value {
@@ -170,7 +169,7 @@ icon {
     top: 36px;
     right: -13px;
     position: absolute;
-    background-color: red;
+    background-color: #004f96;
 	transform: rotate(-12deg);
 }
 .item_old_value:before {
@@ -180,7 +179,7 @@ icon {
     top: 36px;
     right: -13px;
     position: absolute;
-    background-color: red;
+    background-color: #004f96;
 	transform: rotate(12deg);
 }
 .item_value:before{
@@ -197,11 +196,12 @@ icon {
 .footer {
 	position: fixed;
     height: 40px;
-    background-color: #d12626;
+    background-color: #004f96;
     width: 110%;
     left: 0;
     bottom: 0;
 	text-shadow: 2px 2px 0px black;
+	border-top: 2px solid black;
 }
 .foter_img1 {
 	width: 150px;
@@ -232,7 +232,7 @@ icon {
 	width: calc(50% - 30px);
 }
 .item_value-s {
-	background-color: #d12626;
+	background-color: #004f96;
 	width: 170px;
 	border-radius: 50%;
 	position: relative;
@@ -243,7 +243,7 @@ icon {
 }
 .item_value-s_p {
 	font-size: 30px;
-	color: #d12626;
+	color: #004f96;
 	position: relative;
 	left: 27px;
 }
@@ -288,7 +288,7 @@ icon {
 	text-align:center;
 	margin:3px auto;
 	display: block;
-	background-image: linear-gradient(to left,transparent,transparent 50%,red 50%,white);
+	background-image: linear-gradient(to left,transparent,transparent 50%,#004f96 50%,white);
 	background-position: 100% 0;
 	background-size: 200% 100%;
 	transition: all .35s ease-in;
@@ -301,12 +301,12 @@ icon {
 }
 .header__nav--li a {
 	width:350px;
-	background-color: red;
+	background-color: #004f96;
 }
 .header__nav--li:hover {
 	background-position: 0 0;
 	color: black;
-	border: 3px solid red;
+	border: 3px solid #004f96;
 }
 .header__nav--menu {
 	color:white;
@@ -316,7 +316,7 @@ icon {
 	text-align:center;
 	margin:20px auto;
 	display: block;
-	background-image: linear-gradient(to left,transparent,transparent 50%,red 50%,white);
+	background-image: linear-gradient(to left,transparent,transparent 50%,#004f96 50%,white);
 	background-position: 100% 0;
 	background-size: 200% 100%;
 	transition: all .25s ease-in;
@@ -332,7 +332,7 @@ icon {
 .header__nav--menu:hover {
 	background-position: 0 0;
 	color: black;
-	border: 3px solid red;
+	border: 3px solid #004f96;
 }
 .blok{
 	width: 150%;
